@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1558443252 source:l:\iiкурс\А-3-17\nikoforov\lab4\lab04\main.cpp
+	<iostream>
+	<assert.h>
+	<cstdint>
+
