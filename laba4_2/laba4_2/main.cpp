@@ -80,16 +80,20 @@ int main ()
     cout << "Enter string: ";
     fgets(line, MAX_SIZE, stdin);
     const char* str = line;
-    while(true)
-    {
-        if( strstr( filedata, str ) != nullptr )
-            cout << strstr( filedata, str );
+    char* filedata2 = filedata;
+int k=0;
+    while (true)
+        if( strstr( filedata2, str ) != nullptr )
+            {
+                k++;
+                filedata2=strstr(filedata2,str )+1;
+            }
         else
-        {
-            cout << "NULL";
-            break;
-        }
-    }
+            {
+                break;
+            }
+            cout << k;
+
     fclose( file );
     delete[] filedata;
     return 0;
